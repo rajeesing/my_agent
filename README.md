@@ -40,8 +40,8 @@ Here's a quick overview of the main files and directories:
    - Add custom tools or logic in crew.py.
    - Provide inputs in main.py if needed.
 
-1. Run it: crewai run
-The crew will kick off, agents will collaborate, and you'll get an output like report.md.
+1. Run it: crewai run <br/>
+   The crew will kick off, agents will collaborate, and you'll get an output like report.md.
 
 ## Why This Template is Useful
 If you've ever wanted to experiment with multi-agent systems but found the official crewAI examples overwhelming or too code-heavy, this project strips it down to essentials. It's perfect for quick prototyping—whether you're building a research team (e.g., one agent searches, another analyzes, a third writes), an automation pipeline, or something creative.
