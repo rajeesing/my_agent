@@ -2,8 +2,6 @@
 import sys
 import warnings
 
-from datetime import datetime
-
 from my_agent.crew import MyAgent
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
@@ -12,14 +10,16 @@ warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 # crew locally, so refrain from adding unnecessary logic into this file.
 # Replace with inputs you want to test with, it will automatically
 # interpolate any tasks and agents information
+code_base_path = "<Your Codebase Path>"
+target_platform = ".NET 8 + Azure"
 
 def run():
     """
     Run the crew.
     """
     inputs={
-        "codebase_path": "<Your Codebase Path>",
-        "target_platform": ".NET 8 + Azure"
+        "codebase_path": code_base_path,
+        "target_platform": target_platform
     }
 
     try:
@@ -32,8 +32,8 @@ def train():
     Train the crew for a given number of iterations.
     """
     inputs={
-        "codebase_path": "<Your Codebase Path>",
-        "target_platform": ".NET 8 + Azure"
+        "codebase_path": code_base_path,
+        "target_platform": target_platform
     }
     try:
         MyAgent().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
@@ -56,8 +56,8 @@ def test():
     Test the crew execution and returns the results.
     """
     inputs={
-        "codebase_path": "<Your Codebase Path>",
-        "target_platform": ".NET 8 + Azure"
+        "codebase_path": code_base_path,
+        "target_platform": target_platform
     }
 
     try:
