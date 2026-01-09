@@ -16,9 +16,9 @@ Your project simplifies getting started with crewAI by providing a clean, modula
 Here's a quick overview of the main files and directories:
 
 - src/my_agent/
- - config/
-  - agents.yaml: Defines your agents (role, goal, backstory, allowed tools, etc.).
-  - tasks.yaml: Outlines the tasks, which agent handles them, and expected outputs.
+  - config/
+    - agents.yaml: Defines your agents (role, goal, backstory, allowed tools, etc.).
+    - tasks.yaml: Outlines the tasks, which agent handles them, and expected outputs.
 
  - crew.py: Core logic where the "crew" is assembled—agents are loaded, tasks assigned, and custom tools integrated.
  - main.py: Entry point for providing custom inputs or arguments when running the crew.
